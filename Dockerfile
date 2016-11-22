@@ -7,7 +7,7 @@ RUN apt-get -y update
 
 RUN apt-get -yq install build-essential python-dev python-pip libpq-dev \
                         postgresql-client-common postgresql-client-9.5 \
-                        libproj-dev gdal-bin
+                        libproj-dev gdal-bin postgis
 
 ENV GDAL_VERSION 2.1.1
 ADD http://download.osgeo.org/gdal/${GDAL_VERSION}/gdal-${GDAL_VERSION}.tar.gz /usr/local/src/
